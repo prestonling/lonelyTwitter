@@ -12,6 +12,7 @@ import java.util.Date;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -44,6 +45,30 @@ public class LonelyTwitterActivity extends Activity {
 
 			}
 		});
+		/* create a new tweet
+		 tweet is an object */
+//		Tweet firstTweet;
+//		firstTweet = new Tweet();
+//		String temp = firstTweet.getMessage();
+//		System.out.println(temp);
+//		Tweet secondTweet = new Tweet();
+//
+//		secondTweet.setMessage("This is a second tweet");
+//		temp = secondTweet.getMessage();
+//		System.out.println(temp);
+//
+//		Tweet thirdTweet = new Tweet();
+//		thirdTweet.setMesssage("first message", "second message");
+//
+//		importanttweet forthmessage = new importanttweet();
+//
+//		forthmessage.setMessage("hello", "world");
+
+		HappyMood firstMood = new HappyMood();
+		String temp = firstMood.currentMood();
+		System.out.println(temp);
+		Log.d(temp, "First mood");
+
 	}
 
 	@Override
